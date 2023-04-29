@@ -129,7 +129,7 @@
       wine-wayland
       yuzu-mainline
       tailscale
-      kdeconnect-kde
+      # kdeconnect-kde
       
     ];
     openssh.authorizedKeys.keys = [
