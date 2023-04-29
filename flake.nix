@@ -7,7 +7,7 @@
   };
   
   
-  outputs = { self, nixpkgs, sops-nix, devenv}:
+  outputs = { self, nixpkgs, sops-nix, devenv, hyprland}:
     let 
         username = "jack";
         # Declare the system
@@ -21,6 +21,7 @@
             modules = [
               hyprland.nixosModules.default
               ./configuration.nix
+              {programs.hyprland.enable = true;}
               sops-nix.nixosModules.sops
             ];
         };

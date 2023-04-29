@@ -19,7 +19,7 @@
     memtest86.enable = true;
   };
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  # boot.loader.efi.efiSysMountPoint = "/boot/efi";
   
   
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -58,7 +58,7 @@
   # Enable the KDE Plasma Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
-  programs.hyprland.enbale = true;
+  # programs.hyprland.enbale = true;
   
   security.pam.services.kwallet = {
     name = "kwallet";
@@ -91,7 +91,7 @@
     #media-session.enable = true;
   };
   
-  virtualization.libvirtd.enable = true;
+  virtualisation.libvirtd.enable = true;
   programs.dconf.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
